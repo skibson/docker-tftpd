@@ -16,4 +16,4 @@ VOLUME /var/lib/tftpboot
 
 EXPOSE 69
 
-CMD /usr/sbin/in.tftpd --foreground --user tftp --address 0.0.0.0:69 --secure /var/lib/tftpboot
+CMD /usr/sbin/in.tftpd --foreground --create --user tftp --address 0.0.0.0:69 --secure /var/lib/tftpboot
